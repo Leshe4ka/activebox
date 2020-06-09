@@ -94,9 +94,10 @@ img {
 
   position: absolute;
   top: 100px;
-  left: calc(50% - 585px);
+  left: 370px;
+  /*left: calc(50% - 585px);
     left: -webkit-calc(50% - 585px);
-    left: -moz-calc(50% - 585px);
+    left: -moz-calc(50% - 585px);*/
   width: 1170px;
   height: 0px;
   border-top: 2px solid #666666;
