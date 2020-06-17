@@ -6,12 +6,10 @@ html, body {
 
 html {
   min-width: 1900px;
-  border: 1px solid blue;
 }
 
 body {
   width: 100%;
-  border: 1px solid green;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -52,7 +50,6 @@ img {
 }
 
 .header-nav {
-  border: 1px solid red;
   width: 60%;
   
   display: flex;
@@ -96,7 +93,6 @@ img {
 }
 
 .promo-container {
-  border: 1px solid red;
   width: 50%;
   margin: 0 auto;
   padding-top: 200px;
@@ -138,17 +134,14 @@ img {
 
 .features {
   width: 100%;
-  border: 1px solid red;
 }
 
 .feature-img {
-
 }
 
 .features-list {
   width: 60%;
   min-width: 1200px;
-
   display: flex;
   flex-wrap: wrap;
   margin: 55px auto 120px auto;
