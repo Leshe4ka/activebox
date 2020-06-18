@@ -11,7 +11,7 @@
   <body>
     <header class="header container"> 
       <nav  class="header-nav">
-        <a class="logo" href="#"><img src="img/activebox_logo.svg" width="189px" height="24px" alt="ActiveBox"></a>
+        <a class="logo" href="#"><img class="logo-img" src="img/activebox_logo.svg" alt="ActiveBox"></a>
         <ul class="navigation">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Features</a>
@@ -32,8 +32,7 @@
       </nav>
       <div class="promo-container">
         <h1 class="promo-title">Your Favorite One Page Multi Purpose Template</h1>
-        <p class="promo-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-          vel scelerisque nisl consectetur et.</p>
+        <p class="promo-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
         <a href="#" class="promo-button">Find out more</a>
       </div>
     </header>
@@ -217,62 +216,72 @@
 
       <section class="carousel container">
         <div class="carousel-wrapper">
-          <span id="target-item-1"></span>
-          <span id="target-item-2"></span>
-          <span id="target-item-3"></span>
-          <span id="target-item-4"></span>
-          <span id="target-item-5"></span>
-
-          <div class="circle-buttons">
-            <a href="#target-item-1" class="circle circle-1"></a>
-            <a href="#target-item-2" class="circle circle-2"></a>
-            <a href="#target-item-3" class="circle circle-3"></a>
-            <a href="#target-item-4" class="circle circle-4"></a>
-            <a href="#target-item-5" class="circle circle-5"></a>
-          </div>
-
-          <div class="carousel-item item-1">
-            <div class="background-left back-1"></div>
-            <div class="content-right content-1">
-              <p class="statement">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-              <p class="name-position">Susan Sims, Interaction Designer at XYZ</p>
-            </div>
-          </div>
-          <div class="carousel-item item-2">
-            <div class="background-left back-2"></div>
-            <div class="content-right content-2">
-              <p class="statement">Слайд 2</p>
-              <p class="name-position">Текст слайда 2</p>          
-            </div>
-          </div>
-          <div class="carousel-item item-3">
-            <div class="background-left back-3"></div>
-            <div class="content-right content-3">
-              <p class="statement">Слайд 3</p>
-              <p class="name-position">Текст слайда 3</p>
-            </div>
-          </div>
-          <div class="carousel-item item-4">
-            <div class="background-left back-4"></div>
-            <div class="content-right content-4">
-              <p class="statement">Слайд 4</p>
-              <p class="name-position">Текст слайда 4</p>
-            </div>
-          </div>
-          <div class="carousel-item item-5">
-            <div class="background-left back-5"></div>
-            <div class="content-right content-5">
-              <p class="statement">Слайд 5</p>
-              <p class="name-position">Текст слайда 5</p>
-            </div>
-          </div>
-        </div>     
-      </section>
+          <input type="radio" id="slide1" class="carousel-selector" name="carousel-selector" checked="checked">
+          <input type="radio" id="slide2" class="carousel-selector" name="carousel-selector">
+            <input type="radio" id="slide3" class="carousel-selector" name="carousel-selector">
+            <input type="radio" id="slide4" class="carousel-selector" name="carousel-selector">
+            <input type="radio" id="slide5" class="carousel-selector" name="carousel-selector">
+        
+          <ul class="carousel-items">
+            <li class="carousel-item carousel-item1">
+              <div class="carousel-content">
+                <p class="statement">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+                <p class="name-position">Susan Sims, Interaction Designer at XYZ</p>
+              </div>
+            </li>
+        
+            <li class="carousel-item carousel-item2">
+              <div class="carousel-content">
+                <p class="statement">Слайд 2</p>
+                <p class="name-position">Текст слайда 2</p>
+              </div>
+            </li>
+        
+            <li class="carousel-item carousel-item3">
+              <div class="carousel-content">
+                <p class="statement">Слайд 3</p>
+                <p class="name-position">Текст слайда 3</p>
+              </div>
+                </li>
+                
+                <li class="carousel-item carousel-item4">
+              <div class="carousel-content">
+                <p class="statement">Слайд 4</p>
+                <p class="name-position">Текст слайда 4</p>
+              </div>
+                </li>
+                
+                <li class="carousel-item carousel-item5">
+              <div class="carousel-content">
+                <p class="statement">Слайд 5</p>
+                <p class="name-position">Текст слайда 5</p>
+              </div>
+            </li>
+          </ul>
+        
+          <ul class="carousel-labels">
+            <li class="carousel-label">
+              <label for="slide1"></label>
+            </li>
+            <li class="carousel-label">
+              <label for="slide2"></label>
+            </li>
+            <li class="carousel-label">
+              <label for="slide3"></label>
+                </li>
+                <li class="carousel-label">
+              <label for="slide4"></label>
+                </li>
+                <li class="carousel-label">
+              <label for="slide5"></label>
+            </li>
+          </ul>
+        </div>
 
       <section class="download container">
         <h3 class="download-title">Are You Ready to Start? Download Now For Free!</h3>
         <p class="download-description">Fusce dapibus, tellus ac cursus commodo</p>
-        <a href="#" class="download-button">Download Now For Free!</a>
+        <a href="#" class="download-now">Download Now For Free!</a>
       </section>
 
       <section class="footer container">

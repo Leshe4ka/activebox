@@ -5,7 +5,7 @@ html, body {
 }
 
 html {
-  min-width: 1900px;
+  max-width: auto;
 }
 
 body {
@@ -43,15 +43,8 @@ img {
   background-size: cover;
 }
 
-.logo {
-  display: block;
-
-  text-align: center;
-}
-
 .header-nav {
   width: 60%;
-  
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -60,12 +53,24 @@ img {
   border-bottom: 2px solid #666666;
 }
 
+.logo {
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+.logo-img {
+  width: 100%;
+}
+
 .navigation {
+  width: 65%;
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: flex-end;
   margin: 0;
   margin-right: -70px;
+  padding: 0;
   list-style: none;
 }
 
@@ -98,15 +103,16 @@ img {
   padding-top: 200px;
   padding-bottom: 170px;
   text-align: center;
-  
 }
 
 .promo-title {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto; 
   color: white;
   text-transform: uppercase;
   font-size: 65px;
   line-height: 1.1;
+  text-align: center;
 }
 
 .promo-description {
@@ -122,14 +128,14 @@ img {
   display: block;
   width: 20%;
   margin: 0 auto;
-  padding: 18px 0px;
+  padding: 18px 10px;
   background-color: #ff3333;
   border: none;
   text-transform: uppercase;
   color: white;
   cursor: pointer;
 
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .features {
@@ -141,9 +147,10 @@ img {
 
 .features-list {
   width: 60%;
-  min-width: 1200px;
+  
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 55px auto 120px auto;
   padding: 0;
   box-sizing: border-box;
@@ -153,6 +160,7 @@ img {
 
 .features-item {
   width: calc(100%/3);
+  min-width: 300px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -181,8 +189,9 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  justify-content: center;
   
   box-sizing: border-box;
   list-style: none;
@@ -190,6 +199,7 @@ img {
 
 .samples-item {
   width: calc(100%/4);
+  min-width: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 2px;
@@ -269,15 +279,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 100px -30px 100px 0;
-  padding: 0  345px;
-
+  padding: 0;
+  justify-content: center;
+  
   list-style: none;
 }
 
 .team-card {
   max-width: 270px;
-  margin: 0;
-  margin-right: 30px;
+  margin: 0 30px 5px 0;
   padding: 0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -363,137 +373,145 @@ img {
   filter: invert(100%);
 }
 
-.carousel {
-  width: 100%;
+.carousel-items,
+.carousel-labels {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
 }
 
 .carousel-wrapper {
-  width: 100%;
-  height: 500px;
-  position: relative;
+	width: 100%;
+	position: relative;
+	padding-bottom: 30%;
+	background-color: #eee;
+	overflow: hidden;
 }
-
+.carousel-items {
+	width: 500%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: left .5s ease-out;
+        -o-transition: left .5s ease-out;
+        -ms-transition: left .5s ease-out;
+        -moz-transition: left .5s ease-out;
+        -webkit-transition: left .5s ease-out;
+}
 .carousel-item {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  display: flex;
+	width: calc(100%/5);
+	height: 100%;
+    color: white;
+	float: left;
+	background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+.carousel-item1 {
+    background-color: #53354a;
+	background-image: url(/img/carousel_back_1.jpg);
+}
+.carousel-item2 {
+	background-color: #53354a;
+	background-image: url(/img/carousel_back_2.jpg);
+}
+.carousel-item3 {
+	background-color: #53354a;
+	background-image: url(/img/carousel_back_3.jpg);
 }
 
-.background-left,
-.content-right {
-  width: 50%;
+.carousel-item4 {
+	background-color: #53354a;
+	background-image: url(/img/carousel_back_4.jpg);
 }
 
-.circle-buttons {
-  position: absolute;
-  left:  1235px;
-  top: 380px;
-  width: max-content;
-  height: max-content;
-  display: flex;
-  margin-right: -20px;
-  z-index: 5000;
-  background-color: none;
+.carousel-item5 {
+	background-color: #53354a;
+	background-image: url(/img/carousel_back_5.jpg);
 }
 
-.circle {
-  margin-right: 20px;
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: white;
-  opacity: 0.5;
-  transition: 0.5s;
+.carousel-content {
+	width: 30%;
+	margin-left: 60%;
+	margin-top: 5%;
 }
 
-.circle:hover {
-  opacity: 1;
+.statement {  
+	margin: 0;
+	font-size: 2vw;
+	font-family: "Myriad Pro";
+	color: rgb(255, 255, 255);
+	line-height: 1.167;  
+  }
+  
+  .name-position {
+	margin: 40px 0 0 0;
+	font-size: 1vw;
+	font-family: "Myriad Pro";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.615;   
+  }
+
+.carousel-labels {
+	width: 40%;
+	height: 20px;
+	position: absolute;
+	z-index: 2;
+	left: calc(100%/1.6);
+	bottom: calc(100%/100);
+	padding: 10px 0;
+	text-align: center;
+}
+.carousel-selector {
+	display: none;
+}
+.carousel-label {
+	width: auto;
+	display: inline-block;
+}
+.carousel-label label {
+	width: 12px;
+	height: 12px;
+	margin-right: 0.5rem;
+	border-radius: 50%;
+	background-color: white;
+	display: block;
+	cursor: pointer;
 }
 
-.circle:focus {
-  opacity: 1;
+#slide1:checked ~ .carousel-items {
+	left: 0;
 }
-
-.circle-5 {
-  margin-right: 0;
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+	background-color: black;
 }
-
-[id^="target-item"] {
-  display: none;
+#slide2:checked ~ .carousel-items {
+	left: -100%;
 }
-
-.item-1 {
-  z-index: 2;
-  opacity: 1;
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+	background-color: black;
 }
-
-*:target ~ .item-1 { 
-  opacity:0;
+#slide3:checked ~ .carousel-items {
+	left: -200%;
 }
-
- #target-item-1:target ~ .item-1 {
-  opacity:1;
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+	background-color: black;
 }
- 
-#target-item-2:target ~ .item-2,
-#target-item-3:target ~ .item-3,
-#target-item-4:target ~ .item-4,
-#target-item-5:target ~ .item-5 {
-  z-index:3;
-  opacity:1;
-} 
-
-.back-1 {
-  background-image: url("../img/carousel_back_1.jpg");
+#slide4:checked ~ .carousel-items {
+	left: -300%;
 }
-
-.back-2 {
-  background-image: url("../img/carousel_back_2.jpg");
+#slide4:checked ~ .carousel-labels .carousel-label:nth-child(4) label {
+	background-color: black;
 }
-
-.back-3 {
-  background-image: url("../img/carousel_back_3.jpg");
+#slide5:checked ~ .carousel-items {
+	left: -400%;
 }
-
-.back-4 {
-  background-image: url("../img/carousel_back_4.jpg");
-}
-
-.back-5 {
-  background-image: url("../img/carousel_back_5.jpg");
-}
-
-.content-right {
-  background-color: #53354a;
-}
-
-.statement {
-  max-width: 55%;
-  margin-top: 110px;
-  margin-left: 85px;
-
-  font-size: 36px;
-  font-family: "Myriad Pro";
-  color: rgb(255, 255, 255);
-  line-height: 1.167;  
-}
-
-.name-position {
-  max-width: 55%;
-  margin-top: 40px;
-  margin-left: 85px;
-
-  font-size: 13px;
-  font-family: "Myriad Pro";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.615;   
+#slide5:checked ~ .carousel-labels .carousel-label:nth-child(5) label {
+	background-color: black;
 }
 
 .download {
@@ -508,6 +526,7 @@ img {
 
 .download-title {
   margin: 0 auto;
+  padding: 0 20px;
   font-size: 28px;
   font-family: "Myriad Pro";
   color: rgb(45, 48, 51);
@@ -525,11 +544,11 @@ img {
   text-align: center;
 }
 
-.download-button {
+.download-now {
   display: block;
   text-align: center;
   width: 15%;
-  padding: 16px 0;
+  padding: 16px 10px;
   margin: 50px auto 0 auto;
   background-color: rgb(232, 69, 69);
   border-radius: 2px;
@@ -537,7 +556,7 @@ img {
   color: white;
   cursor: pointer;
 
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .footer {
