@@ -415,25 +415,25 @@ img {
 }
 .carousel-item1 {
     background-color: #53354a;
-	background-image: url("/img/carousel_back_1.jpg");
+	background-image: url("../img/carousel_back_1.jpg");
 }
 .carousel-item2 {
 	background-color: #53354a;
-	background-image: url("/img/carousel_back_2.jpg");
+	background-image: url("../img/carousel_back_2.jpg");
 }
 .carousel-item3 {
 	background-color: #53354a;
-	background-image: url("/img/carousel_back_3.jpg");
+	background-image: url("../img/carousel_back_3.jpg");
 }
 
 .carousel-item4 {
 	background-color: #53354a;
-	background-image: url("/img/carousel_back_4.jpg");
+	background-image: url("../img/carousel_back_4.jpg");
 }
 
 .carousel-item5 {
 	background-color: #53354a;
-	background-image: url("/img/carousel_back_5.jpg");
+	background-image: url("../img/carousel_back_5.jpg");
 }
 
 .carousel-content {
