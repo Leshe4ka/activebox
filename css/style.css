@@ -5,7 +5,8 @@ html, body {
 }
 
 html {
-  max-width: auto;
+  width: 100%;
+  //overflow-x: hidden;
 }
 
 body {
@@ -30,11 +31,11 @@ img {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   
   margin: 0 auto;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .header {
@@ -46,6 +47,7 @@ img {
 .header-nav {
   width: 60%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 35px 0;
@@ -276,6 +278,7 @@ img {
 }
 
 .team-list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 100px -30px 100px 0;
@@ -412,25 +415,25 @@ img {
 }
 .carousel-item1 {
     background-color: #53354a;
-	background-image: url(/img/carousel_back_1.jpg);
+	background-image: url("/img/carousel_back_1.jpg");
 }
 .carousel-item2 {
 	background-color: #53354a;
-	background-image: url(/img/carousel_back_2.jpg);
+	background-image: url("/img/carousel_back_2.jpg");
 }
 .carousel-item3 {
 	background-color: #53354a;
-	background-image: url(/img/carousel_back_3.jpg);
+	background-image: url("/img/carousel_back_3.jpg");
 }
 
 .carousel-item4 {
 	background-color: #53354a;
-	background-image: url(/img/carousel_back_4.jpg);
+	background-image: url("/img/carousel_back_4.jpg");
 }
 
 .carousel-item5 {
 	background-color: #53354a;
-	background-image: url(/img/carousel_back_5.jpg);
+	background-image: url("/img/carousel_back_5.jpg");
 }
 
 .carousel-content {
@@ -461,9 +464,11 @@ img {
 	height: 20px;
 	position: absolute;
 	z-index: 2;
-	left: calc(100%/1.6);
-	bottom: calc(100%/100);
-	padding: 10px 0;
+	left: 50%;
+  bottom: 10%;
+  transform: translate(20%, 20%);
+  padding: 10px 0;
+  //transform: scale(0.9);
 	text-align: center;
 }
 .carousel-selector {
